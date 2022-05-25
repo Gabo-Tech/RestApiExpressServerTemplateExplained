@@ -69,7 +69,7 @@ app.post("/", async (req, res) => {
     //Log that variable or send it to the frontend
     log.debug(alldata);
    // res.json(alldata);
-    res.sendFile("/home/anonymous/Documents/Programming/REST CRUD API SEQUELIZE/index.html");
+    res.sendFile("https://github.com/gabriel19971029/RestApiExpressServerTemplateExplained.git/index.html");
   });
 
 //Endpoint to update a specific element from the database passing the id
