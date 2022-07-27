@@ -1,23 +1,26 @@
 # RestApiExpressServerTemplateExplained
 
-Simple file to explain more or less how does an express api works nd the rest of the code in general also to myself to use it as a template to set up logplease, or express or sequelize. 
+Simple file to explain more or less how does an express api works and the rest of the code in general also to myself to use it as a template to set up logplease, or express or sequelize. 
 
 
 <br>Logger set up
-<br>Import logplease from logplease module installed with the Node Package Manager (NPM)
+<br>Import logplease from logplease module installed with the Node Package Manager (NPM) and assign it to a constant variable to use it in your code.
 <br>```const Logger = require('logplease');```
-<br>Set up the showTimestamp property to false 
+<br>Set up the logplease showTimestamp property to false if you don't want to see that consolelogged.
 <br>```const logSetUp = {showTimestamp: false};```
 <br>Assign the called imported logplease function with the configutation variable to another variable
 <br>```const log = Logger.create("",logSetUp);```
+<br>
 <br>Express set up
 <br>Import Express from the Express module package installed with NPM
 <br>```const express = require('express');```
 <br>Assigne the called imported Express function to a variable
 <br>```const app = express();```
+<br>
 <br>bodyParser set up
 <br>Import body-parser, you already know how and from where...
 <br>```const bodyParser = require('body-parser');```
+<br>
 <br>Sequelize set up
 <br>Same, import sequelize...
 <br>```const sequelize = require('sequelize');```
@@ -50,7 +53,7 @@ Sincronize the model with the database. If no table exists matching the model it
 <br>
 Here we start the CRUD this is the endpoint to create something and add it to the database, in this case a blogpost with title and description but it can be modified.
 <br>```app.post("/", async (req, res) => {```
-<br>Get the values from th body post request
+<br>Get the values from the body post request
     <br>```const title = req.body.title;
     const desc = req.body.desc;```
 <br>Build a new model instance following the previously defined model
