@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
+    "body-parser": "^1.20.1",
     "express": "^4.18.1",
     "logplease": "^1.2.15",
     "mysql2": "^2.3.3",
