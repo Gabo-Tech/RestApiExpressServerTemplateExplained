@@ -15,7 +15,7 @@
     "express": "^4.18.1",
     "logplease": "^1.2.15",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.21.0"
+    "sequelize": "^6.28.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
